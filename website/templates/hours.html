@@ -9,18 +9,42 @@
 
 {% block content %}
 
+<!-- ***** Breadcrumb Area Start ***** -->
+<div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/8.jpg' %});">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12">
+        <h2 class="title">Clinic Hours</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="breadcumb--con">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Hours</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="#">
     <div class="container h-300">
       <div class="row h-300 align-items-center">
         <div class="col-12">
           <br>
           
-          <h2 class="title">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Clinic Hours</h2>
           <br>
           <h2 class="title">&nbsp; &nbsp;&nbsp; &nbsp; Mon - Thur -------------------------- 8:30 A.M. - 4 P.M.</h2>
           <h2 class="title">&nbsp; &nbsp;&nbsp; &nbsp; Fri ------------------------------------- 8:30 A.M. - 12 P.M.</h2>
-          <h2 class="title">&nbsp; &nbsp; &nbsp; &nbsp;Sat - Sun ------------------------------- Closed.</h2>
-          <h2 class="title">&nbsp; &nbsp;&nbsp; &nbsp; Public Holidays ----------------------- Closed.</h2>
+          <h2 class="title">&nbsp; &nbsp; &nbsp; &nbsp;Sat - Sun ---------------------------- Closed.</h2>
+          <h2 class="title">&nbsp; &nbsp;&nbsp; &nbsp; Public Holidays ------------------- Closed.</h2>
 
           <br>
         </div>

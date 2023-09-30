@@ -27,7 +27,7 @@
         <div class="col-12">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Contact</li>
             </ol>
           </nav>
@@ -35,7 +35,7 @@
       </div>
     </div>
   </div>
-  <!-- ***** Breadcrumb Area End ***** -->
+  <!-- ***** Breadcrumb Area End ***** --
   {% if message_name %}
 
     <center>
@@ -44,6 +44,7 @@
     </center>
   <br><br>
   {% else %}
+  -->
   <!-- ***** Contact Area Start ***** -->
   <section class="dento-contact-area mt-50 mb-100">
     <div class="container">
@@ -71,16 +72,18 @@
           </div>
           </div>
         </div>
+      </div>
+</section>
 
-        <!-- Contact Form -->
+        <!-- Contact Form --
         <div class="col-12 col-md-8">
           <div class="contact-form">
-            <!-- Section Heading -->
+            <!- Section Heading --
             <div class="section-heading">
               <h2>Get In Touch</h2>
               <div class="line"></div>
             </div>
-            <!-- Form -->
+            <!- Form --
             <form action="{% url 'contact' %}" method="post">
               {% csrf_token %}
               <div class="row">
@@ -105,13 +108,13 @@
     </div>
   </section>
   {% endif %}
-  <!-- ***** Contact Area End ***** -->
+  <!-***** Contact Area End ***** --
 
-  <!-- Book An Oppointment Area Start -->
+  <!- Book An Oppointment Area Start --
   <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
     <div class="container">
       <div class="row">
-        <!--Section Heading-->
+        <!-Section Heading--
         <div class="col-12">
           <div class="section-heading text-center white">
             <h2>Preferred availability </h2>
@@ -122,7 +125,7 @@
 
       <div class="row">
         <div class="col-12">
-          <!-- Appointment Form -->
+          <!- Appointment Form --
           <div class="appointment-form">
             <form action="{% url 'appointment' %}" method="post">
               {% csrf_token %}
@@ -184,7 +187,7 @@
       </div>
     </div>
   </section>
-  <!-- Book An Oppointment Area End -->
+  <!- Book An Oppointment Area End -->
 
   {% endblock %}
 
